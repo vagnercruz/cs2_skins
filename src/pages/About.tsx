@@ -21,19 +21,19 @@ export default function About() {
           </div>
 
           <div className="pt-20 p-6 text-center">
-            <h1 className="text-3xl font-bold mb-2">Seu Nome</h1>
+            <h1 className="text-3xl font-bold mb-2">Vagner "Mendino" da Cruz</h1>
             <p className="text-gray-400 mb-6">Trader CS2 & Entusiasta de Skins</p>
 
             <div className="max-w-2xl mx-auto">
               <p className="text-gray-300 mb-6">
-                Olá! Sou um trader apaixonado por CS2 com mais de X anos de experiência no mercado de skins.
+                Olá! Sou um trader apaixonado por CS2 apaixonado pelo mercado de skins.
                 Minha missão é ajudar outros jogadores a encontrarem as melhores skins pelos melhores preços,
                 sempre com segurança e transparência em todas as negociações.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                 <div className="bg-gray-700 p-4 rounded-lg">
-                  <h3 className="font-bold text-xl text-yellow-500">1000+</h3>
+                  <h3 className="font-bold text-xl text-yellow-500">10+</h3>
                   <p className="text-gray-400">Trades Realizados</p>
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
@@ -41,14 +41,14 @@ export default function About() {
                   <p className="text-gray-400">Feedback Positivo</p>
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
-                  <h3 className="font-bold text-xl text-yellow-500">5 Anos</h3>
+                  <h3 className="font-bold text-xl text-yellow-500">1 Ano</h3>
                   <p className="text-gray-400">de Experiência</p>
                 </div>
               </div>
 
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://github.com/seu-usuario"
+                  href="https://github.com/vagnercruz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors"

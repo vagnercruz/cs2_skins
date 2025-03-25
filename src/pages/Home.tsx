@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Search, Star, Shield, DollarSign, PocketKnife as Knife, Sun as Gun, Phone, ArrowUp } from 'lucide-react';
-import { skins, categories } from '../data/skins';
+import { skins, categories, CategoryId } from '../data/skins';
 import { getRarityColor } from '../utils/colors';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeCategory, setActiveCategory] = useState<'all' | 'rifle' | 'knife' | 'pistol' | 'smg'>('all');
+  const [activeCategory, setActiveCategory] = useState<CategoryId>('all');
 
   const handleWhatsAppClick = (skin: any) => {
     const message = encodeURIComponent(
@@ -32,32 +32,37 @@ export default function Home() {
       <div className="bg-gray-800 border-t border-gray-700">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
-            <div className="flex space-x-4 overflow-x-auto">
-              {categories.map(category => (
-                <button
-                  key={category.id}
-                  onClick={() => setActiveCategory(category.id as typeof activeCategory)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
-                    activeCategory === category.id
-                      ? 'bg-yellow-500 text-black'
-                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                  }`}
-                >
-                  <category.icon className="h-4 w-4" />
-                  <span className="whitespace-nowrap">{category.name}</span>
-                </button>
-              ))}
-            </div>
-            <div className="relative">
+            <div className="relative flex-1 max-w-xl mx-auto">
               <input
                 type="text"
                 placeholder="Pesquisar skins..."
-                className="bg-gray-700 px-4 py-2 rounded-lg pr-10 w-64 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className="w-full bg-gray-700 px-4 py-2 rounded-lg pr-10 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
               <Search className="absolute right-3 top-2.5 text-gray-400" />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-800 border-t border-gray-700">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 py-4">
+            {categories.map(category => (
+              <button
+                key={category.id}
+                onClick={() => setActiveCategory(category.id)}
+                className={`flex items-center justify-center gap-2 px-4 py-2 rounded-lg transition-colors ${
+                  activeCategory === category.id
+                    ? 'bg-yellow-500 text-black'
+                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                }`}
+              >
+                <category.icon className="h-4 w-4" />
+                <span>{category.name}</span>
+              </button>
+            ))}
           </div>
         </div>
       </div>

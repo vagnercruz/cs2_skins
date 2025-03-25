@@ -1,12 +1,31 @@
 import { Star, Sun as Gun, PocketKnife as Knife } from 'lucide-react';
 
+export type CategoryId = 
+  | 'all' 
+  | 'rifle' 
+  | 'rifle_precisao' 
+  | 'knife' 
+  | 'smg' 
+  | 'escopeta' 
+  | 'luva' 
+  | 'pistol' 
+  | 'metralhadora' 
+  | 'adesivo' 
+  | 'chaveiro';
+
 export const categories = [
   { id: 'all', name: 'Todas', icon: Star },
   { id: 'rifle', name: 'Rifles', icon: Gun },
+  { id: 'rifle_precisao', name: 'Rifles de Precisão', icon: Gun },
   { id: 'knife', name: 'Facas', icon: Knife },
+  { id: 'smg', name: 'SMGs', icon: Gun },
+  { id: 'escopeta', name: 'Escopetas', icon: Gun },
+  { id: 'luva', name: 'Luvas', icon: Gun },
   { id: 'pistol', name: 'Pistolas', icon: Gun },
-  { id: 'smg', name: 'SMGs', icon: Gun }
-];
+  { id: 'metralhadora', name: 'Metralhadoras', icon: Gun },
+  { id: 'adesivo', name: 'Adesivos', icon: Gun },
+  { id: 'chaveiro', name: 'Chaveiros', icon: Gun }
+] as const;
 
 export const skins = [
   {
@@ -20,7 +39,7 @@ export const skins = [
     float: 0.01,
     stattrak: false,
     souvenir: true,
-    category: "rifle",
+    category: "rifle_precisao",
     rarity: "covert"
   },
   {
