@@ -1,4 +1,4 @@
-import { Star, Sun as Gun, PocketKnife as Knife } from 'lucide-react';
+import { Star, Sun as Gun, PocketKnife as Knife, Music2Icon } from 'lucide-react';
 
 export type CategoryId = 
   | 'all' 
@@ -11,7 +11,8 @@ export type CategoryId =
   | 'pistol' 
   | 'metralhadora' 
   | 'adesivo' 
-  | 'chaveiro';
+  | 'chaveiro'
+  | 'musicas';
 
 export const categories = [
   { id: 'all', name: 'Todas', icon: Star },
@@ -24,7 +25,8 @@ export const categories = [
   { id: 'pistol', name: 'Pistolas', icon: Gun },
   { id: 'metralhadora', name: 'Metralhadoras', icon: Gun },
   { id: 'adesivo', name: 'Adesivos', icon: Gun },
-  { id: 'chaveiro', name: 'Chaveiros', icon: Gun }
+  { id: 'chaveiro', name: 'Chaveiros', icon: Gun },
+  { id: 'musicas', name: 'Musicas', icon: Music2Icon }
 ] as const;
 
 export const skins = [
