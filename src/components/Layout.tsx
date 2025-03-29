@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <Sword className="h-8 w-8 text-yellow-500" />
-            <h1 className="text-2xl font-bold">CS2 Skins Market</h1>
+            <h1 className="text-2xl font-bold">CS2 Skins Mendino</h1>
           </Link>
           <nav className="flex gap-6">
             <Link 
@@ -51,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <footer className="bg-gray-800 py-6">
         <div className="container mx-auto px-4 text-center text-gray-400">
-          <p>© 2024 CS2 Skins Market. Todos os direitos reservados.</p>
+          <p>© 2025 CS2 Skins Mendino. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
