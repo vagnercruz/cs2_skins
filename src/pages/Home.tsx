@@ -17,7 +17,7 @@ export default function Home() {
       `🔄 Preço Upgrade: ${skin.upgradePrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n\n` +
       `Podemos negociar?`
     );
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5546999423140?text=${message}`, '_blank');
   };
 
   const filteredSkins = skins.filter(skin => {
