@@ -14,7 +14,7 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
             <img
-              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&auto=format&fit=crop&q=60"
+              src="https://avatars.fastly.steamstatic.com/e86de6813e8b0d5f335e132071c349e32866f35a_full.jpg"
               alt="Profile"
               className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full border-4 border-gray-800 object-cover"
             />
@@ -56,7 +56,7 @@ export default function About() {
                   <Github className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://twitter.com/seu-usuario"
+                  href="https://x.com/MendinoBR"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors"
@@ -64,7 +64,7 @@ export default function About() {
                   <Twitter className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://instagram.com/seu-usuario"
+                  href="https://www.instagram.com/vagmendino/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors"
