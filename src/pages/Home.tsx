@@ -84,9 +84,6 @@ export default function Home() {
                     {skin.souvenir && (
                       <span className="bg-yellow-500 text-black text-xs px-2 py-1 rounded">Souvenir</span>
                     )}
-                    {!skin.stattrak && !skin.souvenir && (
-                      <span className="bg-gray-600 text-xs px-2 py-1 rounded">Normal</span>
-                    )}
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 mb-2">

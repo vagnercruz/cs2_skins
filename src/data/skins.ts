@@ -32,17 +32,18 @@ export const categories = [
 export const skins = [
   {
     id: 1,
-    name: "Dragon Lore",
+    name: "Fever Dream",
     weapon: "AWP",
-    wear: "Factory New",
-    price: 10000,
-    upgradePrice: 8500,
-    image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&auto=format&fit=crop&q=60",
-    float: 0.01,
+    wear: "Field-Tested",
+    price: 67.27,
+    upgradePrice: 53.81,
+    image: "https://images2.imgbox.com/a1/ef/l4HOUSLh_o.jpg",
+    float: 0.1586,
+    pattern: 640,
     stattrak: false,
-    souvenir: true,
+    souvenir: false,
     category: "rifle_precisao",
-    rarity: "covert"
+    rarity: "classified"
   },
   {
     id: 2,
