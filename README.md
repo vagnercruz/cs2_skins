@@ -1,1 +1,1 @@
-# cs2_skins
+# CS2 Skins
