@@ -89,16 +89,91 @@ export const skins = [
   },
   {
     id: 5,
-    name: "Neon Rider",
-    weapon: "MP9",
-    wear: "Factory New",
-    price: 45,
-    upgradePrice: 35,
+    name: "Mortis",
+    weapon: "AWP",
+    wear: "Minimal Wear",
+    price: 27.00,
+    upgradePrice: 21.60,
     image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
-    float: 0.02,
-    stattrak: true,
+    float: 0.13,
+    stattrak: false,
     souvenir: false,
-    category: "smg",
-    rarity: "mil-spec"
+    category: "rifle_precisao",
+    rarity: "classified"
+  }
+
+  {
+    id: 6,
+    name: "Mortis",
+    weapon: "AWP",
+    wear: "Minimal Wear",
+    price: 27.00,
+    upgradePrice: 21.60,
+    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
+    float: 0.13,
+    stattrak: false,
+    souvenir: false,
+    category: "rifle_precisao",
+    rarity: "classified"
+  }
+
+  {
+    id: 7,
+    name: "Mortis",
+    weapon: "AWP",
+    wear: "Minimal Wear",
+    price: 27.00,
+    upgradePrice: 21.60,
+    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
+    float: 0.13,
+    stattrak: false,
+    souvenir: false,
+    category: "rifle_precisao",
+    rarity: "classified"
+  }
+
+  {
+    id: 8,
+    name: "Mortis",
+    weapon: "AWP",
+    wear: "Minimal Wear",
+    price: 27.00,
+    upgradePrice: 21.60,
+    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
+    float: 0.13,
+    stattrak: false,
+    souvenir: false,
+    category: "rifle_precisao",
+    rarity: "classified"
+  }
+
+  {
+    id: 9,
+    name: "Mortis",
+    weapon: "AWP",
+    wear: "Minimal Wear",
+    price: 27.00,
+    upgradePrice: 21.60,
+    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
+    float: 0.13,
+    stattrak: false,
+    souvenir: false,
+    category: "rifle_precisao",
+    rarity: "classified"
+  }
+
+  {
+    id: 10,
+    name: "Mortis",
+    weapon: "AWP",
+    wear: "Minimal Wear",
+    price: 27.00,
+    upgradePrice: 21.60,
+    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
+    float: 0.13,
+    stattrak: false,
+    souvenir: false,
+    category: "rifle_precisao",
+    rarity: "classified"
   }
 ];
