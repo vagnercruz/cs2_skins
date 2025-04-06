@@ -6,13 +6,14 @@ export type CategoryId =
   | 'rifle_precisao' 
   | 'knife' 
   | 'smg' 
-  | 'escopeta' 
+  | 'shotgun' 
   | 'luva' 
   | 'pistol' 
-  | 'metralhadora' 
-  | 'adesivo' 
-  | 'chaveiro'
-  | 'musicas';
+  | 'machine gun' 
+  | 'sticker' 
+  | 'keychain'
+  | 'music'
+  | 'soldiers';
 
 export const categories = [
   { id: 'all', name: 'Todas', icon: Star },
@@ -20,13 +21,14 @@ export const categories = [
   { id: 'rifle_precisao', name: 'Rifles de Precisão', icon: Gun },
   { id: 'knife', name: 'Facas', icon: Knife },
   { id: 'smg', name: 'SMGs', icon: Gun },
-  { id: 'escopeta', name: 'Escopetas', icon: Gun },
+  { id: 'shotgun', name: 'Escopetas', icon: Gun },
   { id: 'luva', name: 'Luvas', icon: Gun },
   { id: 'pistol', name: 'Pistolas', icon: Gun },
-  { id: 'metralhadora', name: 'Metralhadoras', icon: Gun },
-  { id: 'adesivo', name: 'Adesivos', icon: Gun },
-  { id: 'chaveiro', name: 'Chaveiros', icon: Gun },
-  { id: 'musicas', name: 'Musicas', icon: Music2Icon }
+  { id: 'machine gun', name: 'Metralhadoras', icon: Gun },
+  { id: 'sticker', name: 'Adesivos', icon: Gun },
+  { id: 'keychain', name: 'Chaveiros', icon: Gun },
+  { id: 'music', name: 'Musicas', icon: Music2Icon },
+  { id: 'soldiers', name: 'Musicas', icon: Music2Icon }
 ] as const;
 
 export const skins = [
@@ -100,80 +102,79 @@ export const skins = [
     souvenir: false,
     category: "rifle_precisao",
     rarity: "classified"
-  }
+  },
 
   {
     id: 6,
-    name: "Mortis",
-    weapon: "AWP",
-    wear: "Minimal Wear",
-    price: 27.00,
-    upgradePrice: 21.60,
+    name: "Phoenix",
+    weapon: "Soldado",
+    price: 19.58,
+    upgradePrice: 15.66,
     image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
-    float: 0.13,
+    float: "Sem float",
     stattrak: false,
     souvenir: false,
-    category: "rifle_precisao",
-    rarity: "classified"
-  }
+    category: "soldiers",
+    rarity: "consumer"
+  },
 
   {
     id: 7,
-    name: "Mortis",
-    weapon: "AWP",
-    wear: "Minimal Wear",
-    price: 27.00,
-    upgradePrice: 21.60,
-    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
-    float: 0.13,
+    name: "Kiss♥Love",
+    weapon: "Sawed-Off",
+    wear: "Field-Tested",
+    price: 16.72,
+    upgradePrice: 13.37,
+    image: "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cih9_92hkYSEkfHLOLLChWde_sBOh-zF_Jn4xlXs80A-Zm2nINWddwNqZQ7VrlS9xOjugZ-0v5jKznQxuCB34CuPmx2pwUYbgZ31p1Q/330x192?allow_animated=1",
+    float: 0.29,
     stattrak: false,
     souvenir: false,
-    category: "rifle_precisao",
+    category: "shotgun",
     rarity: "classified"
-  }
+  },
 
   {
     id: 8,
-    name: "Mortis",
+    name: "Duality ",
     weapon: "AWP",
-    wear: "Minimal Wear",
-    price: 27.00,
-    upgradePrice: 21.60,
-    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
-    float: 0.13,
+    wear: "Field-Tested",
+    price: 12.57,
+    upgradePrice: 10.05,
+    image: "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FABz7PLfYQJO5dG0m7-Ymfb_NoTck29Y_cg_2e3HrIjwjFWxrhI6Mm30JtOdIQNqaQ2C8lm6x7ztgpK-6s-cwXpm6D5iuygfY0gFfw/330x192?allow_animated=1",
+    float: 0.36,
     stattrak: false,
     souvenir: false,
     category: "rifle_precisao",
     rarity: "classified"
-  }
+  },
 
   {
     id: 9,
-    name: "Mortis",
-    weapon: "AWP",
-    wear: "Minimal Wear",
-    price: 27.00,
-    upgradePrice: 21.60,
-    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
-    float: 0.13,
-    stattrak: false,
+    name: "Torque",
+    weapon: "USP-S",
+    wear: "Field-Tested",
+    price: 12.16,
+    upgradePrice: 9.72,
+    image: "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8jkIbTWhG5C-8xnteTE8YXghRq2qBZua272cYLHdlRrMw6CqVO5wufu15W5v8_KnXFi7ikm5infyRXhn1gSOcmMOx0M/330x192?allow_animated=1",
+    float: 0.30,
+    stattrak: true,
     souvenir: false,
-    category: "rifle_precisao",
-    rarity: "classified"
-  }
+    category: "pistol",
+    rarity: "mil-spec"
+  },
 
   {
     id: 10,
-    name: "Mortis",
-    weapon: "AWP",
-    wear: "Minimal Wear",
-    price: 27.00,
-    upgradePrice: 21.60,
-    image: "https://images.unsplash.com/photo-1561347981-969c80cf4463?w=800&auto=format&fit=crop&q=60",
-    float: 0.13,
-    stattrak: false,
+    name: "Osiris",
+    weapon: "PP-Bizon",
+    wear: "Well-Worn",
+    price: 15.66,
+    upgradePrice: 12.52,
+    image: "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotLO_JAlf0Ob3czRY49L7m5OChf7nDLbUkmJE5Yt03LiT9tSn2Ffi80RuYTulI4_BJwI-N1GF_1e6yO7p0Zbq6p7PzyFkpGB8stNPeUOp/330x192?allow_animated=1",
+    float: 0.42,
+    stattrak: true,
     souvenir: false,
-    category: "rifle_precisao",
-    rarity: "classified"
+    category: "smg",
+    rarity: "restricted"
   }
 ];
